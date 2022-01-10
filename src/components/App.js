@@ -1,13 +1,16 @@
+import { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
 import List from "./List";
 import Search from "./Search";
 
 function App() {
 
+  const [searchTerm, setSearchTerm] = useState("");
+
   return (
     <div>
       <h1>My Hacker Stories</h1>
-      <Search />
+      <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <hr />
       <List />
       <nav
