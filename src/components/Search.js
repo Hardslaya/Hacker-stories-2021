@@ -1,8 +1,4 @@
-import { useState } from "react";
-
-export default function Search() {
-  
-  const [searchTerm, setSearchTerm] = useState("");
+export default function Search(searchTerm, setSearchTerm) {
 
   function handleChange(event) {
     setSearchTerm(event.target.value);
