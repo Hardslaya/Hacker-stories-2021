@@ -12,7 +12,7 @@ function App() {
       <h1>My Hacker Stories</h1>
       <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <hr />
-      <List />
+      <List searchTerm={searchTerm} />
       <nav
         style={{
           borderBottom: "solid 1px",

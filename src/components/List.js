@@ -19,10 +19,10 @@ const list = [
   },
 ];
 
-function List() {
+function List({ searchTerm }) {
   return (
     <ul>
-      {list.map(function (item) {
+      {list.filter(item => item.title.toLowerCase().includes(searchTerm.toLowerCase())).map(function (item) {
         return (
           <li key={item.objectID}>
             <Item item={item} />

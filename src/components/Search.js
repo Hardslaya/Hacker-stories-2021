@@ -1,4 +1,4 @@
-export default function Search(searchTerm, setSearchTerm) {
+export default function Search({searchTerm, setSearchTerm}) {
 
   function handleChange(event) {
     setSearchTerm(event.target.value);
